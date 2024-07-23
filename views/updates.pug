@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        title Add to this table
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add a Pet 
+        a(href="/" class="add-button") Go Home
+    form(method="POST" action="/update-cobj" class="styled-form")
+        label(for="nameVal" class="form-label") Pet Name
+        input(type="text" name="nameVal" required class="form-input")
+
+        label(for="breedVal" class="form-label") Pet Breed
+        input(type="text" name="breedVal" required class="form-input")
+
+        label(for="ageVal" class="form-label") Pet Age
+        input(type="number" name="ageVal" required class="form-input")
+
+        label(for="weightVal" class="form-label") Pet Weight
+        input(type="number" name="weightVal" required class="form-input")
+
+        input(type="submit" value="Submit" class="form-submit")
